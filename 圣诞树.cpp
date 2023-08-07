@@ -16,17 +16,17 @@ int n;
 string me = "Merry Christmas ^_^ !";
 string fm = "From Yukisong";
 
-void getcur(short int x,short int y)//ÒÆ¶¯¹â±êº¯Êý 
+void getcur(short int x,short int y)//ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½êº¯ï¿½ï¿½
 {
-	COORD pos = (COORD){x,y};//¶¨ÒåÒ»¸öÆÁÄ»ÉÏµÄ×ù±ê 
+	COORD pos = (COORD){x,y};//ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ä»ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½
 	HANDLE handle = GetStdHandle( STD_OUTPUT_HANDLE );
 	SetConsoleCursorPosition( handle,pos );;
 }
 
 void goprint(int x,int y, char c) {
 	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), rand()%16);
-	getcur(x,y); printf("%c", c); //getcur(0,row);//Ïû³ý¹â±êÓ°Ïì 
-} 
+	getcur(x,y); printf("%c", c); //getcur(0,row);//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½
+}
 
 void del(int x,int y)
 {
@@ -34,7 +34,7 @@ void del(int x,int y)
 }
 
 int main() {
-    cout << "ÇëÊäÈëÄãÏ²»¶µÄÒ»¸öÊý×Ö£¨10 - 17£©£¬²¢½«´°¿Ú×î´ó»¯£º";
+    cout << "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï²ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½10 - 17ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó»¯£ï¿½";
     cin >> n;
     cout << endl;
     int Layer = 2 * n - 1;
@@ -77,4 +77,3 @@ int main() {
     	vis[i] = 1;
 	}
 }
-
